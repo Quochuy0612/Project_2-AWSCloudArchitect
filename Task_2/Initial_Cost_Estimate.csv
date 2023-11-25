@@ -5,23 +5,23 @@ Upfront cost,Monthly cost,Total 12 months cost,Currency
 
 
 Detailed Estimate
-Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
-My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1226.4,14716.80,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 200), Advance EC2 instance (t4g.small), Pricing strategy ( 3 Year  None upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,3896.4,46756.80,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (15 TB), Quantity (1), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (2.95)"
-My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,328.5,3942.00,USD,,"Number of EC2 instances (10), Number of EIPs per instance (10)"
-My Estimate,US East (N. Virginia),,S3 Standard,0,123.29,1479.48,USD,,"S3 Standard storage (5 TB per month), Data returned by S3 Select (2 TB per month), Data scanned by S3 Select (2 TB per month)"
-My Estimate,US East (N. Virginia),,S3 One Zone - Infrequent Access,0,0,0.00,USD,,
-My Estimate,US East (N. Virginia),,S3 Management and Insights,0,0,0.00,USD,,
-My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,
-My Estimate,US East (N. Virginia),,AWS Data Transfer,0,163.84,1966.08,USD,,"DT Inbound: Internet (14 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (8 TB per month), Data transfer cost (163.84)"
-My Estimate,US East (N. Virginia),,Application Load Balancer,0,746.43,8957.16,USD,,Number of Application Load Balancers (1)
-My Estimate,US East (N. Virginia),,VPN Connection,0,0,0.00,USD,,Working days per month (22)
-My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,164.45,1973.40,USD,,Number of NAT Gateways (5)
-My Estimate,US East (N. Virginia),,AWS PrivateLink,0,7.31,87.72,USD,,Number of VPC Interface endpoints per AWS region (1)
-My Estimate,US East (N. Virginia),,IPAM,0,0.2,2.40,USD,,Number of active IP addresses (1)
-My Estimate,US East (N. Virginia),,Reachability Analyzer,0,0.1,1.20,USD,,Number of connectivity analysis per month (1)
-My Estimate,US East (N. Virginia),,Amazon Route 53,0,100,1200.00,USD,,
-My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,1500,18000.00,USD,,Number of Metrics (includes detailed and custom metrics) (5000)
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1226.4,14716.80,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 200), Advance EC2 instance (t4g.small), Pricing strategy ( 3 Year  None upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,3896.4,46756.80,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (15 TB), Quantity (1), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (2.95)"
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,328.5,3942.00,USD,"Number of EC2 instances (10), Number of EIPs per instance (10)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,123.29,1479.48,USD,"S3 Standard storage (5 TB per month), Data returned by S3 Select (2 TB per month), Data scanned by S3 Select (2 TB per month)"
+My Estimate,US East (N. Virginia),,S3 One Zone - Infrequent Access,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,S3 Management and Insights,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,AWS Data Transfer,0,163.84,1966.08,USD,"DT Inbound: Internet (14 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (8 TB per month), Data transfer cost (163.84)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,746.43,8957.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,VPN Connection,0,0,0.00,USD,Working days per month (22)
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,164.45,1973.40,USD,Number of NAT Gateways (5)
+My Estimate,US East (N. Virginia),,AWS PrivateLink,0,7.31,87.72,USD,Number of VPC Interface endpoints per AWS region (1)
+My Estimate,US East (N. Virginia),,IPAM,0,0.2,2.40,USD,Number of active IP addresses (1)
+My Estimate,US East (N. Virginia),,Reachability Analyzer,0,0.1,1.20,USD,Number of connectivity analysis per month (1)
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,100,1200.00,USD,
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,1500,18000.00,USD,Number of Metrics (includes detailed and custom metrics) (5000)
 
 
 
