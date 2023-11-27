@@ -1,29 +1,21 @@
-﻿Estimate summary
-Upfront cost,Monthly cost,Total 12 months cost,Currency
-0,6372.760000000001,76473.12,USD
-,,* Includes upfront cost
-
-
-Detailed Estimate
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1226.4,14716.80,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 200), Advance EC2 instance (t4g.small), Pricing strategy ( 3 Year  None upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,2012.24,24146.88,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (7 TB), Quantity (1), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (2.95)"
-My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,328.5,3942.00,USD,"Number of EC2 instances (10), Number of EIPs per instance (10)"
-My Estimate,US East (N. Virginia),,S3 Standard,0,123.29,1479.48,USD,"S3 Standard storage (5 TB per month), Data returned by S3 Select (2 TB per month), Data scanned by S3 Select (2 TB per month)"
-My Estimate,US East (N. Virginia),,S3 One Zone - Infrequent Access,0,0,0.00,USD,
-My Estimate,US East (N. Virginia),,S3 Management and Insights,0,0,0.00,USD,
-My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
-My Estimate,US East (N. Virginia),,AWS Data Transfer,0,163.84,1966.08,USD,"DT Inbound: Internet (14 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (8 TB per month), Data transfer cost (163.84)"
-My Estimate,US East (N. Virginia),,Application Load Balancer,0,746.43,8957.16,USD,Number of Application Load Balancers (1)
-My Estimate,US East (N. Virginia),,VPN Connection,0,0,0.00,USD,Working days per month (22)
-My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,164.45,1973.40,USD,Number of NAT Gateways (5)
-My Estimate,US East (N. Virginia),,AWS PrivateLink,0,7.31,87.72,USD,Number of VPC Interface endpoints per AWS region (1)
-My Estimate,US East (N. Virginia),,IPAM,0,0.2,2.40,USD,Number of active IP addresses (1)
-My Estimate,US East (N. Virginia),,Reachability Analyzer,0,0.1,1.20,USD,Number of connectivity analysis per month (1)
-My Estimate,US East (N. Virginia),,Amazon Route 53,0,100,1200.00,USD,
-My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,1500,18000.00,USD,Number of Metrics (includes detailed and custom metrics) (5000)
-
-
-
-Acknowledgement
-"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196,USD,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,383.25,4599,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,73,876,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Working days per month (22), Number of Site-to-Site VPN Connections (2)"
+My Estimate,US East (N. Virginia),,Amazon EC2,10848,1516.68,29048.16,USD,"Operating system (Linux), Quantity (6), Pricing strategy (Standard Reserved Instances 1 Year Partial Upfront), Storage amount (1 TB), Instance type (m5a.4xlarge)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,14620,1689.41,34892.92,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m5.4xlarge), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr Partial Upfront)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,417.3,5007.6,USD,S3 Standard storage (100 GB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Not selected (7.5 TB per month), DT Outbound: Not selected (50 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (6), Number of EIPs per instance (1)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+Rationale:  to reduce the cost by use reversed instances 1 year period.,,,,,,,,
+Changes been made,,,,,,,,
+1st change  on the ec2-instance service I choose one-year reserve instances for the same instance type. ,,,,,,,,
+2st change  on the RDS service  I choose one-year reserve instances.,,,,,,,,
+,,,,,,,,
+Total monthly,"4,262.64 USD",,,,,,,

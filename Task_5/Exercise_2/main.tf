@@ -1,9 +1,7 @@
 provider "aws" {
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-  token = var.aws_session_token
-  region = var.aws_region
+  region     = var.aws_region
 }
+
 
 
 data "archive_file" "lambda_zip" {
@@ -13,7 +11,6 @@ data "archive_file" "lambda_zip" {
 }
 
 
-# Lambda role configuration
 resource "aws_iam_role" "lambda_exec_role" {
   name = "lambda_exec_role"
   assume_role_policy = <<EOF
@@ -34,11 +31,11 @@ EOF
 }
 
 
-# Cloudwatch configuration
 resource "aws_cloudwatch_log_group" "lambda_log_group" {
   name              = "/aws/lambda/${var.lambda_name}"
-  retention_in_days = 7
+  retention_in_days = 14
 }
+
 
 resource "aws_iam_policy" "lambda_logs_policy" {
   name        = "lambda_logs_policy"
@@ -61,13 +58,13 @@ resource "aws_iam_policy" "lambda_logs_policy" {
 EOF
 }
 
+
 resource "aws_iam_role_policy_attachment" "lambda_logs_policy" {
   role       = aws_iam_role.lambda_exec_role.name
   policy_arn = aws_iam_policy.lambda_logs_policy.arn
 }
 
 
-# Lambda function
 resource "aws_lambda_function" "geeting_lambda" {
   function_name = var.lambda_name
   filename = data.archive_file.lambda_zip.output_path
